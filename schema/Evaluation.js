@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+
+
 const evaluationSchema = new mongoose.Schema({
     date: { type: Date, default: Date.now },
     criteres: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Critere' }],
